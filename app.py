@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 model = pickle.load(open('lr_cancer_model.pkl', 'rb'))
 
-app = Flask(__name__,template_folder='Templates')
+app = Flask(__name__,template_folder='templates')
 
 @app.route('/', methods=['GET'])
 def index():
